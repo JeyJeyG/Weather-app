@@ -2,7 +2,7 @@ const cityInput = document.getElementById("cityInput");
 const searchButton = document.getElementById("searchButton");
 const weatherInfo = document.getElementById("weatherInfo");
 
-const API_KEY = "YOUR_API_KEY" // Replace with your own API
+const API_KEY = "9b416ed5a95eb131b11b2289e27dc214" // Replace with your own API
 searchButton.addEventListener('click', ()=> {
     const city = cityInput.value;
     if(city){
@@ -28,6 +28,6 @@ async function getWeather(city) {
 
     } catch(error){
         console.error("Error Fetching Weather data:", error);
-        weatherInfo.textContent = "An error occured";
+        weatherInfo.textContent = "An error occurred";
     }
 }
